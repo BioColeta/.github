@@ -1,0 +1,54 @@
+name: Especificação
+description: Nova funcionalidade ou melhoria, com critérios de aceite
+title: "[AREA] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: "O que existe hoje e por que mudar."
+    validations:
+      required: true
+  - type: textarea
+    id: historia
+    attributes:
+      label: História de usuário
+      description: "Como <papel>, quero <objetivo> para <benefício>."
+    validations:
+      required: true
+  - type: textarea
+    id: escopo
+    attributes:
+      label: Escopo
+      description: "O que será entregue."
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de aceite
+      description: "Um por linha: QUANDO <situação> ENTÃO o sistema DEVE <resultado>."
+    validations:
+      required: true
+  - type: textarea
+    id: fora
+    attributes:
+      label: Fora de escopo
+      description: "O que fica para depois."
+    validations:
+      required: false
+  - type: textarea
+    id: dependencias
+    attributes:
+      label: Dependências
+      description: "Issues que precisam terminar antes."
+    validations:
+      required: false
+  - type: textarea
+    id: validacao
+    attributes:
+      label: Como validar
+      description: "Passos ou testes que comprovam a entrega."
+    validations:
+      required: true

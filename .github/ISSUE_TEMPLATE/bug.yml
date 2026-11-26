@@ -1,0 +1,33 @@
+name: Bug
+description: Algo não funciona como deveria
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: ocorrido
+    attributes:
+      label: O que aconteceu
+      description: "Descreva o problema. Capturas de tela ajudam."
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que deveria acontecer
+      description: "Comportamento esperado."
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Como reproduzir
+      description: "Passo a passo, com a tela e o tamanho da janela."
+    validations:
+      required: true
+  - type: textarea
+    id: ambiente
+    attributes:
+      label: Ambiente
+      description: "Navegador, sistema e tema (claro ou escuro)."
+    validations:
+      required: false
